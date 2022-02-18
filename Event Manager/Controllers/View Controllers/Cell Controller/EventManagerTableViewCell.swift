@@ -38,9 +38,9 @@ class EventManagerTableViewCell: UITableViewCell {
         guard let event = event else { return }
         eventTitleLabel.text = event.title
         if event.isComplete {
-            clockButton.setBackgroundImage(UIImage(named: "clock"), for: .normal)
+            clockButton.setImage(UIImage(systemName: "clock"), for: .normal)
         } else {
-            clockButton.setBackgroundImage(UIImage(named: "clock.fill"), for: .normal)
+            clockButton.setImage(UIImage(systemName: "clock.fill"), for: .normal)
         }
     }
     
